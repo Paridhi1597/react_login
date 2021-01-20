@@ -7,9 +7,11 @@ import { Switch , Route, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Course from './Course';
-import Student from './Student';
+import Students from './Students'
 import Login from './Login'
 import Navbar from './Navbar';
+
+import StudentList from './StudentList';
 
 
 function App() {
@@ -20,8 +22,9 @@ function App() {
       <Switch>
         <Route exact path = "/" component = {Home}/>
          <Route exact path = "/course" component = {Course}/>
-         <Route exact path = "/student" component = {Student}/>
+         <Route exact path = "/student" component = {Students}/>
          <Route exact path = "/login" component = {Login}/>
+         <Route exact path = "/resultList" component = {StudentList}/>
          <Redirect to = "/"></Redirect>
       </Switch>
    
